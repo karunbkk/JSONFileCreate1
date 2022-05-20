@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Create JSON File";
+}
+
+<h2>
+    Create Personal Details JSON File
+</h2>
+<div class="panel-group">
+    <div class="panel panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse2" style="display:block">Personal Information</a>
+        </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse in" aria-expanded="true">
+        <div class="panel-body">
+            <form method="post" asp-action="Index">
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <label for="FirstName">First Name: <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Please enter first name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <label for="LastName">Last Name: <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Please enter last name" />
+                    </div>
+                </div>
+                 <div class="form-group row">
+                    <div class="col-sm-2">
+                        <input type="button" class="btn btn-info" id="btnCancel" value="Cancel"/>
+                        <input type="submit" class="btn btn-info" id="btnSubmit" value="Submit"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div> 
+</div>
